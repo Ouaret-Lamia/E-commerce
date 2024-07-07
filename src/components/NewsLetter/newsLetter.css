@@ -1,0 +1,28 @@
+.newsDiv{
+    background-color: #fcf5f5;
+    text-align: center;
+    padding: 6%;
+}
+
+.Message {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .MsgInput {
+    background-color: white;
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 30pt;
+    padding-left: 10px;
+  }
+  
+  .SendSVG {
+    color: white;
+    background-color: teal;
+    padding: 3pt;
+    height: 25pt;
+    width: 12%;
+  }

@@ -1,0 +1,29 @@
+.ItemDiv{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    div{
+        position: absolute;
+        text-align: center;
+    }
+    h1{
+        color: white;
+    }
+    button{
+        border: none;
+        cursor: pointer;
+        padding: 3% 10%;
+        font-size: large;
+        background-color: #fff;
+        Link{
+            color: none;
+            text-decoration: none;
+        }
+    }
+}

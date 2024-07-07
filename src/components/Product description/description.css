@@ -1,0 +1,23 @@
+.descriptionDiv{
+    padding-top: 15vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    .descPic{
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        padding: 2%;
+        height: 80vh;
+        img{
+            width: 70%;
+            object-fit: cover;
+        }
+    }
+    .description{
+        padding-right: 10vh;
+        #productName{
+            font-size: 5vh;
+        }
+    }
+}

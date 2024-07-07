@@ -1,0 +1,52 @@
+/* Les bibliothéques de carousel */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.slide{
+    display: flex;
+    background-color: #f5fafd;
+    padding-bottom: 6%;
+    margin-top: 55px;
+    gap: 50px;
+    .intro{
+        padding-top: 15%;
+        padding-left: 15%;
+        
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: larger;
+            letter-spacing: 2px;
+            margin-right: 5vh;
+        }
+        button{
+            cursor: pointer;
+            padding: 1% 4%;
+            font-size: larger;
+            background-color: transparent;
+        }
+    }
+    .circle{
+        background-color: #18ada1;
+        width: 400px;
+        height: 350px;
+        border-radius: 50%;
+        margin-top: 6%;
+    }
+}
+
+.circle{
+    animation: changeColor 10s infinite ease-in-out;
+}
+@keyframes changeColor {
+    0%{
+        background-color : #289c8d;
+    }
+    50%{
+        background-color : #e2325e;
+    }
+    100%{
+        background-color : #289c8d;
+    }
+}

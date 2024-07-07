@@ -1,0 +1,76 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.logoInfo{
+    margin: 2% 5%;
+}
+
+
+.footerLinks{
+  display: grid;
+  grid-auto-flow: column;
+}
+.footer-nav h4{
+  margin-left: 30pt;
+  margin-bottom: 10pt;
+}
+.footerLinks ul {
+  list-style-type: none;
+}
+  
+.footerLinks li {
+    line-height: 30pt;
+}
+
+
+.footInfo{
+  display: flex;
+  align-items: center;
+  gap: 10pt;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    gap: 5%;
+}
+.container button {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+.socials {
+    width: 50%;
+    height: 50%;
+    fill: #fff;
+}
+.container #facebook {
+    background-color: #2753a7;
+    color: #fff;
+    border: none;
+}
+.container #facebook:hover {
+    box-shadow:  1pt 1pt 3pt #2753a7;
+}
+.container #twitter { 
+    background-color: #55acee;
+    color: #fff;
+    border: none;
+}
+.container #twitter:hover { 
+    box-shadow:  1pt 1pt 3pt #55acee;
+}
+.container #instagram {
+    background-color: #DD2A7B;
+    color: #fff;
+    border: none;
+}
+.container #instagram:hover {
+    box-shadow:  1pt 1pt 3pt #DD2A7B;
+}

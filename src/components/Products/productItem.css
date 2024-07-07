@@ -1,0 +1,43 @@
+.prodItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5fafd;
+    padding: 10%;
+    height: 45vh;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transition: filter 0.3s ease;
+    }
+    .prodIcons{
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35%;
+        position: absolute;
+        .iconDiv{
+            cursor: pointer;
+            /* width: 100%;
+            height: 100%; */
+            padding: 10%;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.prodItem:hover .prodIcons{
+    opacity: 1;
+}
+.prodItem:hover{
+    filter: brightness(95%);
+}
+.iconDiv:hover{
+    background-color: black;
+}

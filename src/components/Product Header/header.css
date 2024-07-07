@@ -1,0 +1,15 @@
+.categTitle{
+    padding-top: 90px;
+    margin-left: 20pt;
+    margin-bottom: 0;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20pt;
+    .prodFilter{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
