@@ -1,9 +1,7 @@
-import './langMenu.css'
+import './langMenu.css';
 import React, { useState } from 'react';
-import { IoMdArrowDropdown } from 'react-icons/io'; // For the dropdown arrow
 
-export default function LangMenu(){
-  const [isOpen, setIsOpen] = useState(false);
+export default function LangMenu() {
   const [selectedLanguage, setSelectedLanguage] = useState('EN');
 
   const languages = [
@@ -12,29 +10,25 @@ export default function LangMenu(){
     // Add more languages as needed
   ];
 
-  const toggleDropdown = () => setIsOpen(!isOpen);
-
-  const selectLanguage = (langCode) => {
-    setSelectedLanguage(langCode);
-    setIsOpen(false);
+  const handleChange = (event) => {
+    const selectedCode = event.target.value;
+    setSelectedLanguage(selectedCode);
     // Here you would typically call a function to change the app's language
   };
 
   return (
     <div className="language-dropdown">
-      <button onClick={toggleDropdown} className="dropdown-toggle">
-        <span>{selectedLanguage}</span>
-        <IoMdArrowDropdown />
-      </button>
-      {isOpen && (
-        <ul className="dropdown-menu">
-          {languages.map((lang) => (
-            <li key={lang.code} onClick={() => selectLanguage(lang.code)}>
-              {lang.name}
-            </li>
-          ))}
-        </ul>
-      )}
+      <select
+        value={selectedLanguage}
+        onChange={handleChange}
+        className="dropdown-toggle"
+      >
+        {languages.map((lang) => (
+          <option key={lang.code} value={lang.code}>
+            {lang.name}
+          </option>
+        ))}
+      </select>
     </div>
   );
-};
+}
